@@ -1,4 +1,5 @@
 export class ExServer {
     id: number;
-    name: number;
+    name: String;
+    value: number;
 }
