@@ -2,10 +2,9 @@
 
 ## Git
     - git clone https://github.com/WevertonRA/Trabalho-Angular 
-    - https://github.com/WevertonRA/Trabalho-Angular
 
 ## Rodado o projeto
-    - Rode o comando: npm i
+    - npm install
     - Faça siga o passo a passo abaixo para criar uma API REST 
 
 ### Instalação da API Rest
@@ -18,3 +17,5 @@
         - https://mwiza.medium.com/create-a-rest-api-using-angular-and-json-server-eb087087600f
     - Documentação:
         - https://github.com/typicode/json-server#getting-started 
+        
+## Imagens
