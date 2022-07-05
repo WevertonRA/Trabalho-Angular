@@ -13,7 +13,6 @@ export class Ex01Component {
   ) { }
 
   goToEX02() {
-    console.log("EX-02")
     this.router.navigate(['/EX02']);
   }
 
