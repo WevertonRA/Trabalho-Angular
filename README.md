@@ -1,5 +1,9 @@
 # TrabalhoAngular
 
+## Git
+    - git clone https://github.com/WevertonRA/Trabalho-Angular 
+    - https://github.com/WevertonRA/Trabalho-Angular
+
 ## Rodado o projeto
     - Rode o comando: npm i
     - Faça siga o passo a passo abaixo para criar uma API REST 
