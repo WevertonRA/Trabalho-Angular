@@ -20,7 +20,7 @@ export class Ex01Component {
     this.router.navigate(['/EX03']);
   }
 
-  goToEX04() {
-    this.router.navigate(['/EX04']);
+  goToEX0() {
+    this.router.navigate(['/EX04', '1']);
   }
 }
