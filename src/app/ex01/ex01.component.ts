@@ -4,13 +4,16 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-ex01',
   templateUrl: './ex01.component.html',
-  styleUrls: ['./ex01.component.css']
 })
 export class Ex01Component {
 
   constructor(
     private router: Router
   ) { }
+
+  goToHome() {
+    this.router.navigate(['']);
+  }
 
   goToEX02() {
     this.router.navigate(['/EX02']);
