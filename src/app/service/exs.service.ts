@@ -25,8 +25,8 @@ export class ExsService {
     return this.http.delete<ExServer>(`${this.url}/list/${value.id}`)
   }
 
-  findAll(id: any): Observable<ExServer> {
-    return this.http.get<ExServer>(`${this.url}/list`)
+  findAll(): Observable<Array<ExServer>> {
+    return this.http.get<Array<ExServer>>(`${this.url}/list`)
   }
 
   findById(id: any): Observable<ExServer> {
