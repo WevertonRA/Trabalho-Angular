@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ExServer } from '../model/ex';
+import { ExsService } from '../service/exs.service';
 
 @Component({
   selector: 'app-ex03',
@@ -6,10 +9,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ex03.component.css']
 })
 export class Ex03Component implements OnInit {
+ 
+  exSever: Array<ExServer>;
+  value = new ExServer;
 
-  constructor() { }
+  constructor(private exs: ExsService,
+    private route: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit(): void {
+    this.findAll();
   }
 
+  findAll() {
+    this.exs.findAll().subscribe(request => {
+      this.exSever = request;
+      this.value.id = this.exSever[this.exSever.length - 1].id + 1;
+      this.value.value = request[request.length - 1].value;
+    });
+  }
+
+  inserir(): void {
+    this.exs.create(this.value).subscribe(() => this.findAll());
+  }
+
+  deleteItem(ex: ExServer): void {
+    this.exs.delete(ex).subscribe(() => this.findAll());
+  }
+
+  goToAtualizar(id: any): void {
+    this.router.navigate(['/EX04', id]);
+  }
 }
