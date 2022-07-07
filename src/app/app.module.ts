@@ -22,7 +22,7 @@ import { Ex04Component } from './ex04/ex04.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

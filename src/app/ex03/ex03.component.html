@@ -1,11 +1,12 @@
-<br/>
-<input [(ngModel)]="value.name"/>
-<br/>
+<app-ex01 title="EX-03"></app-ex01>
+<br />
+<input [(ngModel)]="value.name" />
+<br />
 <button (click)="inserir()">Inserir</button>
 <div *ngFor="let item of exSever">
     <li>
         {{item.name}}
-        <button (click)="goToAtualizar(item.id)"> Atualizar </button>
         <button (click)="deleteItem(item)"> Remover </button>
+        <button (click)="goToAtualizar(item.id)"> Atualizar </button>
     </li>
 </div>

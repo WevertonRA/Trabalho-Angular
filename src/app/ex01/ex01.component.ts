@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
   templateUrl: './ex01.component.html',
 })
 export class Ex01Component {
+
+  @Input() title = "EX-01"
 
   constructor(
     private router: Router

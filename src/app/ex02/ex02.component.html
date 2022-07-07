@@ -1,8 +1,9 @@
-<br/>
-<input [(ngModel)]="image.name"/>
-<br/>
+<app-ex01 title="EX-02"></app-ex01>
+<br />
+<input [(ngModel)]="image.name" />
+<br />
 <button (click)="addImage()">Adcionar</button>
 <button (click)="removeImage()">Remover</button>
 <div *ngFor="let item of images">
-    <img src="{{item.path}}" [alt]="item.name"/>
+    <img [src]="item.path" [alt]="item.name" />
 </div>

@@ -5,21 +5,19 @@ import { Image } from '../model/image';
   selector: 'app-ex02',
   templateUrl: './ex02.component.html',
 })
-export class Ex02Component implements OnInit {
+export class Ex02Component {
 
   image = new Image;
   images = new Array<Image>;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
   addImage() {
     let img = new Image;
     img.name = this.image.name
-    img.path = "assets/img/"+img.name+".jpg"
+    img.path = "assets/" + img.name + ".jpg"
     this.images.push(img)
+    this.image = new Image
   }
 
   removeImage() {

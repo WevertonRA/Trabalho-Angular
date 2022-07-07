@@ -6,15 +6,13 @@ import { ExsService } from '../service/exs.service';
 @Component({
   selector: 'app-ex03',
   templateUrl: './ex03.component.html',
-  styleUrls: ['./ex03.component.css']
 })
 export class Ex03Component implements OnInit {
- 
+
   exSever: Array<ExServer>;
   value = new ExServer;
 
   constructor(private exs: ExsService,
-    private route: ActivatedRoute,
     private router: Router) { }
 
   ngOnInit(): void {

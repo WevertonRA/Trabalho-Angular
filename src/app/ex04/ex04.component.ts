@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class Ex04Component implements OnInit {
 
-  exSever: ExServer;
+  exSever = new ExServer;
 
   constructor(private exs: ExsService,
     private route: ActivatedRoute,
