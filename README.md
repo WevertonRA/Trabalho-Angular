@@ -11,6 +11,7 @@
 ## Rodado o projeto
     - npm install
     - Faça siga o passo a passo abaixo para criar uma API REST 
+    - ng serve --open
 
 ### Instalação da API Rest
     Para fazer simulação de uma API Rest foi usado json-server

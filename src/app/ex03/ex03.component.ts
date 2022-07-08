@@ -28,7 +28,10 @@ export class Ex03Component implements OnInit {
   }
 
   inserir(): void {
-    this.exs.create(this.value).subscribe(() => this.findAll());
+    this.exs.create(this.value).subscribe(() =>{ 
+      this.findAll();
+      this.value = new ExServer;
+    });
   }
 
   deleteItem(ex: ExServer): void {
